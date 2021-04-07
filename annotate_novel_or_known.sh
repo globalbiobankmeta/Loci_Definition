@@ -1,5 +1,5 @@
-region_file=$1  #region.txt output by https://github.com/globalbiobankmeta/PLOTS/blob/master/plot_scripts/ManhattanPlot.r  
-reported_bed_file=$2 #bed file with three columns that contain the previously reported top hit
+region_file=$1  #region.txt output by define_sig_region.sh
+reported_bed_file=$2 #bed file with three columns that contain the region around the previously reported top hits (500kb up- and down-stream)
 
 tail -n +2 $region_file awk '{if ($3 >= 0) print "chr"$2"\t"$3"\t"$4; else print "chr"$2"\t0\t"$4;}' | sort -k1,1 -k2,2n > ${region_file}.reformat.bed
 
