@@ -1,6 +1,6 @@
 ##This script will generate regions ${outprefix}.regions.txt which contains merged regions with "knownRegionFlank" bp up- and down-stream top hits
 
-Rscript /plot_scripts/ManhattanPlot.r	\
+Rscript /PLOTS/plot_scripts/ManhattanPlot.r	\
 	--input=${summary_stats_file}	\
 	--PVAL="all_inv_var_meta_p"	\
 	--knownRegionFlank=500000	\
