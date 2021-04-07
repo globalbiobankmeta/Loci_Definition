@@ -2,7 +2,7 @@
 
 Rscript /plot_scripts/ManhattanPlot.r	\
 	--input=${summary_stats_file}	\
-	--PVAL="all_${method}_meta_p"	\
+	--PVAL="all_inv_var_meta_p"	\
 	--knownRegionFlank=500000	\
 	--prefix=${outprefix}	\
 	--ismanhattanplot=TRUE	\
